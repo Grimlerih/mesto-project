@@ -1,0 +1,23 @@
+.place-info__button {
+  width: 22px;
+  height: 19px;
+  margin-right: 30px;
+  border: none;
+  transition: opacity 0.2s linear;
+  align-self: center;
+  background-color: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.place-info__button:hover {
+  opacity: 0.5;
+}
+
+.place-info__button:focus {
+  background-image: url(../../../images/active.svg);
+}
+
+.place-info__button:focus:hover {
+  opacity: 1;
+}
