@@ -6,6 +6,7 @@
   cursor: pointer;
   transition: opacity 0.2s linear;
   align-self: center;
+  padding: 0;
 }
 
 .profile-info__button:hover {
