@@ -1,15 +1,24 @@
 .profile-info__button {
   border: 1px solid #FFFFFF;
-  width: 24px;
-  height: 24px;
   background-color: inherit;
   cursor: pointer;
   transition: opacity 0.2s linear;
   align-self: center;
-  padding: 0;
+  padding: 12px;
+  background-image: url(../../../images/qweVector.svg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .profile-info__button:hover {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 555px) {
+  .profile-info__button {
+    background-size: 7.5px 7.5px;
+    padding: 9px;
+  }
 }
 

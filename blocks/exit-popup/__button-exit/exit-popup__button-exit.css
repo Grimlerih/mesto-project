@@ -1,0 +1,10 @@
+.exit-popup__button-exit {
+  margin-bottom: 8px;
+  align-self: end;
+}
+
+@media screen and (max-width: 555px) {
+  .exit-popup__button-exit {
+    margin-bottom: 16px;
+  }
+}

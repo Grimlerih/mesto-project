@@ -1,13 +1,14 @@
 .profile__button {
-  width: 150px;
-  height: 50px;
   cursor: pointer;
   background-color: inherit;
   border: 2px solid #FFFFFF;
   border-radius: 2px;
   transition: opacity 0.2s linear;
   align-self: center;
-  padding: 0;
+  padding: 25px 75px;
+  background-image: url(../../../images/button\ +.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .profile__button:hover {
@@ -24,5 +25,7 @@
   .profile__button {
     margin-right: 0;
     width: 282px;
+    background-size: 16px;
+    padding: 25px 141px;
   }
 }

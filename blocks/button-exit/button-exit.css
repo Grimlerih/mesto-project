@@ -1,0 +1,19 @@
+.button-exit {
+  border: 0;
+  padding: 16px;
+  background-color: inherit;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+  background-image: url(../../images/Close\ Icon.svg);
+  background-size: cover;
+}
+
+.button-exit:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 555px) {
+  .button-exit {
+    padding: 10px;
+  }
+}

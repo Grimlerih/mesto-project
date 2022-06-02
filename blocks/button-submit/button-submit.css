@@ -1,0 +1,22 @@
+.button-submit {
+  background-color: black;
+  color: #fff;
+  width: 358px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: opacity 0.2s linear;
+  border: 0;
+  padding: 0;
+}
+
+.button-submit:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 555px) {
+  .button-submit {
+    width: 238px;
+    height: 46px;
+  }
+}

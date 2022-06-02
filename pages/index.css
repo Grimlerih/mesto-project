@@ -18,7 +18,7 @@
 @import url(../blocks/profile-item/__avatar/profile-item__avatar.css);
 
 @import url(../blocks/profile-info/profile-info.css);
-@import url(../blocks/profile-info/_place/profile__info_place_header.css);
+@import url(../blocks/profile-info/_place/profile-info_place_header.css);
 @import url(../blocks/profile-info/__button/profile-info__button.css);
 @import url(../blocks/profile-info/__name/profile-info__name.css);
 @import url(../blocks/profile-info/__activity/profile-info__activity.css);
@@ -34,80 +34,22 @@
 
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 
-.popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  top: 0;
-  left: 0;
-  display: flex;
-}
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/__exit-popup/popup__exit-popup.css);
 
-.popup__container {
-  width: 430px;
-  height: 330px;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  border-radius: 10px;
-}
+@import url(../blocks/exit-popup/exit-popup.css);
+@import url(../blocks/exit-popup/__button-exit/exit-popup__button-exit.css);
 
-.popup__container_name {
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 29px;
-  margin:34px 0 0 36px ;
+@import url(../blocks/button-exit/button-exit.css);
 
-}
+@import url(../blocks/popup-container/popup-container.css);
+@import url(../blocks/popup-container/__name/popup-container__name.css);
+@import url(../blocks/popup-container/__name/_place/popup-container__name_place_popup.css);
+@import url(../blocks/popup-container/__form-popup/popup-container__form-popup.css);
+@import url(../blocks/popup-container/__button-submit/popup-container__button-submit.css);
 
-.info {
-  display: flex;
-  margin: 54px auto 48px;
-  width: 358px;
-  height: 84px;
-  flex-direction: column;
-  justify-content: space-between;
-}
+@import url(../blocks/form-popup/form-popup.css);
+@import url(../blocks/form-popup/__text/form-popup__text.css);
 
-.popup__container_text {
-  box-sizing: border-box;
-  height: 27px;
-  border: 0;
-  padding: 0;
-
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.popup__container_text::placeholder {
-  color: black;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.popup__container_button {
-  background-color: black;
-  color: #fff;
-  width: 358px;
-  height: 50px;
-  cursor: pointer;
-  margin: 0 auto 37px;
-  border-radius: 2px;
-  transition: opacity 0.2s linear;
-  border: 0;
-}
-
-.popup__container_button:hover {
-  opacity: 0.8;
-}
-
-.popup__container_button_exit {
-  width: 32px;
-  height: 32px;
-  border: 0;
-  background-color: aquamarine;
-  align-self: end;
-  padding: 0;
-}
+@import url(../blocks/button-submit/button-submit.css);

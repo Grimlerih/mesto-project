@@ -1,0 +1,9 @@
+.popup-container__name_place_popup {
+  margin: 34px 0 0 36px;
+}
+
+@media screen and (max-width: 555px) {
+  .popup-container__name_place_popup {
+    margin: 25px auto 0;
+  }
+}
