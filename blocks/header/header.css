@@ -1,5 +1,7 @@
 .header {
   max-width: 880px;
+  margin: 45px auto 40px;
+  position: relative;
 }
 
 .header::before {
@@ -10,4 +12,10 @@
   border-bottom: 1px solid #545454;
   box-sizing: border-box;
   position: absolute;
+}
+
+@media screen and (max-width: 555px) {
+  .header {
+    margin: 28px auto 40px;
+  }
 }

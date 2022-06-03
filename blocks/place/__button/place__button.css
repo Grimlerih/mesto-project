@@ -1,0 +1,23 @@
+.place__button {
+  margin-right: 20px;
+  border: none;
+  transition: opacity 0.2s linear;
+  align-self: center;
+  background-color: inherit;
+  padding: 9.5px 11px ;
+  cursor: pointer;
+  background-image: url(../../../images/like.svg);
+  background-repeat: no-repeat;
+}
+
+.place__button:hover {
+  opacity: 0.5;
+}
+
+.place__button:focus {
+  background-image: url(../../../images/active.svg);
+}
+
+.place__button:focus:hover {
+  opacity: 1;
+}

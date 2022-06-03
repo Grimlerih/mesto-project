@@ -10,94 +10,96 @@
 </head>
 
 <body class="page">
-  <header class="header header_place_center">
-    <img class="logo logo_place_header" src="./images/logo.svg" alt="Логотип">
+  <header class="header ">
+    <img class="logo" src="./images/logo.svg" alt="Логотип">
   </header>
   <main class="content">
     <section class="profile">
-      <div class="profile-item">
-        <img class="profile-item__avatar" src="./images/image.png" alt="Жак-Ив Кусто">
-        <div class="profile-info profile-info_place_header">
-          <h2 class="profile-info__name">Жак-Ив Кусто</h2>
-          <button class="profile-info__button">
+      <div class="profile__container">
+        <img class="profile__avatar" src="./images/image.png" alt="Жак-Ив Кусто">
+        <div class="profile__info">
+          <h1 class="profile__name">Жак-Ив Кусто</h1>
+          <button class="profile__button_type_edit" type="button">
           </button>
-          <p class="profile-info__activity">Исследователь океана </p>
+          <p class="profile__activity">Исследователь океана </p>
         </div>
       </div>
-      <button class="profile__button">
+      <button class="profile__button_type_add" type="button">
       </button>
     </section>
-    <section class="elements">
-      <div class="place">
-        <img class="place__image" src="./images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск">
-        <div class="place-info">
-          <h2 class="place-info__name">Карачаево-Черкессия</h2>
-          <button class="place-info__button">
-          </button>
-        </div>
-      </div>
-      <div class="place">
-        <img class="place__image" src="./images/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус">
-        <div class="place-info">
-          <h2 class="place-info__name">Гора Эльбрус</h2>
-          <button class="place-info__button">
-          </button>
-        </div>
-      </div>
-      <div class="place">
-        <img class="place__image" src="./images/kirill-pershin-1556355-unsplash.png" alt="Домбай">
-        <div class="place-info">
-          <h2 class="place-info__name">Домбай</h2>
-          <button class="place-info__button">
-          </button>
-        </div>
-      </div>
-      <div class="place">
-        <img class="place__image" src="./images/ozero_baikal_211.jpg" alt="Байкал">
-        <div class="place-info">
-          <h2 class="place-info__name">Байкал</h2>
-          <button class="place-info__button">
-          </button>
-        </div>
-      </div>
-      <div class="place">
-        <img class="place__image" src="./images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск">
-        <div class="place-info">
-          <h2 class="place-info__name">Карачаево-Черкессия</h2>
-          <button class="place-info__button">
-          </button>
-        </div>
-      </div>
-      <div class="place">
-        <img class="place__image" src="./images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск">
-        <div class="place-info">
-          <h2 class="place-info__name">Карачаево-Черкессия</h2>
-          <button class="place-info__button">
-          </button>
-        </div>
-      </div>
-    </section>
-    <div class="popup">
-      <!-- popup_opened -->
-      <div class="exit-popup popup__exit-popup">
-        <button class="button-exit exit-popup__button-exit">
-        </button>
-        <div class="popup-container">
-          <h2 class="popup-container__name popup-container__name_place_popup">Редактировать профиль</h2>
-          <div class="form-popup popup-container__form-popup">
-            <input class="form-popup__text" type="text" placeholder="Жак-Ив Кусто">
-            <input class="form-popup__text" type="text" placeholder="Исследователь океана">
+    <section>
+      <ul class="elements">
+        <li class="place">
+          <img class="place__image" src="./images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск">
+          <div class="place__info">
+            <h2 class="place__name">Карачаево-Черкессия</h2>
+            <button class="place__button" type="button">
+            </button>
           </div>
-          <button class="button-submit popup-container__button-submit">
-            Сохранить
-          </button>
-        </div>
-      </div>
-    </div>
+        </li>
+        <li class="place">
+          <img class="place__image" src="./images/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус">
+          <div class="place__info">
+            <h2 class="place__name">Гора Эльбрус</h2>
+            <button class="place__button" type="button">
+            </button>
+          </div>
+        </li>
+        <li class="place">
+          <img class="place__image" src="./images/kirill-pershin-1556355-unsplash.png" alt="Домбай">
+          <div class="place__info">
+            <h2 class="place__name">Домбай</h2>
+            <button class="place__button" type="button">
+            </button>
+          </div>
+        </li>
+        <li class="place">
+          <img class="place__image" src="./images/ozero_baikal_211.jpg" alt="Байкал">
+          <div class="place__info">
+            <h2 class="place__name">Байкал</h2>
+            <button class="place__button" type="button">
+            </button>
+          </div>
+        </li>
+        <li class="place">
+          <img class="place__image" src="./images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск">
+          <div class="place__info">
+            <h2 class="place__name">Карачаево-Черкессия</h2>
+            <button class="place__button" type="button">
+            </button>
+          </div>
+        </li>
+        <li class="place">
+          <img class="place__image" src="./images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск">
+          <div class="place__info">
+            <h2 class="place__name">Карачаево-Черкессия</h2>
+            <button class="place__button" type="button">
+            </button>
+          </div>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer class="footer">
     <p class="footer__copyright">© 2020 Mesto Russia</p>
   </footer>
+  <div class="popup">
+    <!-- popup_opened -->
+    <div class="popup__container">
+      <button class="popup__button-close" type="button">
+      </button>
+      <form class="form">
+        <h2 class="form__title">Редактировать профиль</h2>
+        <div class="form__container">
+          <input class="form__text" type="text" name="name" placeholder="Жак-Ив Кусто">
+          <input class="form__text" type="text" name="activity" placeholder="Исследователь океана">
+        </div>
+        <button class="form__button" type="button">
+          Сохранить
+        </button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
