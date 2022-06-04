@@ -1,4 +1,4 @@
-.profile__button_type_edit {
+.profile__button-edit {
   border: 1px solid #FFFFFF;
   background-color: inherit;
   cursor: pointer;
@@ -11,12 +11,12 @@
   background-position: center;
 }
 
-.profile__button_type_edit:hover {
+.profile__button-edit:hover {
   opacity: 0.6;
 }
 
 @media screen and (max-width: 555px) {
-  .profile__button_type_edit {
+  .profile__button-edit {
     background-size: 7.5px 7.5px;
     padding: 9px;
   }

@@ -9,6 +9,12 @@
   max-width: 500px;
 }
 
+@media screen and (max-width: 865px) {
+  .profile__activity {
+    max-width: 300px;
+  }
+}
+
 @media screen and (max-width: 555px) {
   .profile__activity {
     font-weight: 400;
@@ -19,3 +25,4 @@
     max-width: 200px;
   }
 }
+

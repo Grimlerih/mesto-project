@@ -1,4 +1,4 @@
-.profile__button_type_add {
+.profile__button-add {
   cursor: pointer;
   background-color: inherit;
   border: 2px solid #FFFFFF;
@@ -11,18 +11,18 @@
   background-repeat: no-repeat;
 }
 
-.profile__button_type_add:hover {
+.profile__button-add:hover {
   opacity: 0.6;
 }
 
 @media screen and (max-width: 840px) {
-  .profile__button_type_add {
+  .profile__button-add {
     margin-right: 20px;
   }
 }
 
 @media screen and (max-width: 555px) {
-  .profile__button_type_add {
+  .profile__button-add {
     margin-right: 0;
     width: 282px;
     background-size: 16px;
