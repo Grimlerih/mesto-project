@@ -78,6 +78,16 @@
           </div>
         </li>
       </ul>
+      <template id = "place">
+        <li class="place">
+          <img src="" alt="" class="place__image">
+          <div class="place__info">
+            <h2 class="place__name"></h2>
+            <button class="place__button" type="button"></button>
+          </div>
+        </li>
+      </template>
+
     </section>
   </main>
   <footer class="footer">
@@ -85,7 +95,8 @@
   </footer>
   <div class="popup">
     <!-- popup_opened -->
-    <div class="popup__container">
+    <div class="popup__container popup__container_edit">
+      <!-- popup__container_opened -->
       <button class="popup__button-close" type="button">
       </button>
       <form class="form" name="form">
@@ -93,6 +104,22 @@
         <div class="form__container">
           <input class="form__text form__text_type_name" type="text" name="name" value="Жак-Ив Кусто">
           <input class="form__text form__text_type_activity" type="text" name="activity" value="Исследователь океана">
+        </div>
+        <button class="form__button" type="submit">
+          Сохранить
+        </button>
+      </form>
+    </div>
+
+    <div class="popup__container popup__container_add">
+      <!-- popup__container_opened -->
+      <button class="popup__button-close" type="button">
+      </button>
+      <form class="form" name="form">
+        <h2 class="form__title">Новое место</h2>
+        <div class="form__container">
+          <input class="form__text" type="text" name="name" placeholder="Название">
+          <input class="form__text" type="text" name="activity" placeholder="Ссылка на картинку">
         </div>
         <button class="form__button" type="submit">
           Сохранить

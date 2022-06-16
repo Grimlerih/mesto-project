@@ -1,6 +1,6 @@
 .popup__container {
   width: 470px;
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: auto;
 }
