@@ -1,0 +1,8 @@
+.trash {
+  background-image: url(../../images/Trash.svg);
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  align-self: center;
+}

@@ -78,9 +78,10 @@
           </div>
         </li>
       </ul>
+
       <template id = "place">
         <li class="place">
-          <img src="" alt="" class="place__image">
+          <img src="" alt="" id = "place__image" class="place__image">
           <div class="place__info">
             <h2 class="place__name"></h2>
             <button class="place__button" type="button"></button>
@@ -93,39 +94,42 @@
   <footer class="footer">
     <p class="footer__copyright">© 2020 Mesto Russia</p>
   </footer>
+
   <div class="popup">
     <!-- popup_opened -->
-    <div class="popup__container popup__container_edit">
-      <!-- popup__container_opened -->
-      <button class="popup__button-close" type="button">
+
+    <div id = "popup__add-container" class="popup__container popup__container_type_add">
+      <!-- popup__container__type_add -->
+      <button id="add_form_close" class="popup__button-close" type="button">
       </button>
-      <form class="form" name="form">
-        <h2 class="form__title">Редактировать профиль</h2>
+      <form id = "add__form" class="form" name="form">
+        <h2 class="form__title">Новое место</h2>
         <div class="form__container">
-          <input class="form__text form__text_type_name" type="text" name="name" value="Жак-Ив Кусто">
-          <input class="form__text form__text_type_activity" type="text" name="activity" value="Исследователь океана">
+          <input class="form__text form__text_place-name" type="text" name="name" placeholder="Название">
+          <input class="form__url" type="url" name="url" placeholder="Ссылка на картинку">
         </div>
-        <button class="form__button" type="submit">
+        <button id = "form__button_add" class="form__button " type="submit">
           Сохранить
         </button>
       </form>
     </div>
 
-    <div class="popup__container popup__container_add">
-      <!-- popup__container_opened -->
-      <button class="popup__button-close" type="button">
+    <div id = "popup__edit-container" class="popup__container popup__container_type_edit">
+      <button  id = "edit_form_close" class="popup__button-close" type="button">
       </button>
-      <form class="form" name="form">
-        <h2 class="form__title">Новое место</h2>
+      <form id = "edit__form" class="form" name="form">
+        <h2 class="form__title">Редактировать профиль</h2>
         <div class="form__container">
-          <input class="form__text" type="text" name="name" placeholder="Название">
-          <input class="form__text" type="text" name="activity" placeholder="Ссылка на картинку">
+          <input class="form__text form__text_type_name" type="text" name="name" value="Жак-Ив Кусто">
+          <input class="form__text form__text_type_activity" type="text" name="activity" value="Исследователь океана">
         </div>
-        <button class="form__button" type="submit">
+        <button id="form__button_edit" class="form__button" type="submit">
           Сохранить
         </button>
       </form>
     </div>
+
+
   </div>
   <script src="./scripts/script.js"></script>
 </body>
