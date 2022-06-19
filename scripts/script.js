@@ -30,7 +30,7 @@ closeButtonEdit.addEventListener('click', closeForm);
 
 //редактирование информации имени и работы
 const submitButtonEdit = document.getElementById('form__button_edit');
-const EditForm = document.querySelector('#edit__form');
+const editForm = document.querySelector('#edit__form');
 
 function formSubmitHandler(evt) {
   evt.preventDefault();
@@ -43,19 +43,19 @@ function formSubmitHandler(evt) {
   closeForm();
 };
 
-EditForm.addEventListener('submit', formSubmitHandler);
+editForm.addEventListener('submit', formSubmitHandler);
 
-//добавление карточек методом template
+//добавление карточек c помощью модального окна методом template
 const submitButtonAdd = document.querySelector('#form__button_add');
 const placeContainer = document.querySelector('.elements');
 const addForm = document.querySelector('#add__form');
 const placeName = document.querySelector('.form__text_place-name');
 const placeUrl = document.querySelector('.form__url');
+const placeTemplate = document.querySelector('#place').content;
 
 function addCards(event) {
-  event.preventDefault();
-  const placeTemplate = document.querySelector('#place').content;
   const placeElement = placeTemplate.querySelector('.place').cloneNode(true);
+  event.preventDefault();
   placeElement.querySelector('.place__name').textContent = placeName.value;
   placeElement.querySelector('.place__image').src = placeUrl.value;
   placeContainer.prepend(placeElement);
@@ -63,3 +63,38 @@ function addCards(event) {
 };
 
 addForm.addEventListener('submit', addCards);
+
+//добавление карточек с помощью js
+const initialCards = [{
+    name: 'Архыз',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+  },
+  {
+    name: 'Челябинская область',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+  },
+  {
+    name: 'Иваново',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+  },
+  {
+    name: 'Камчатка',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+  },
+  {
+    name: 'Холмогорский район',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+  },
+  {
+    name: 'Байкал',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+  }
+];
+
+initialCards.forEach(function (element) {
+  const placeCard = placeTemplate.querySelector('.place').cloneNode(true);
+  placeCard.querySelector('.place__name').textContent = element.name;
+  placeCard.querySelector('.place__image').src = element.link;
+  placeContainer.append(placeCard)
+});
+
