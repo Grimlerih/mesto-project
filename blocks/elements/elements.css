@@ -1,25 +1,17 @@
 .elements {
   display: grid;
   max-width: 880px;
-  grid-template-columns: repeat(3, minmax(min-content, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(282px,1fr));
   gap: 20px 17px;
   margin: 50px auto 66px;
   padding: 0;
   list-style-type: none;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 899px) {
   .elements {
-    max-width: 640px;
-    grid-template-columns: repeat(2, minmax(min-content, max-content));
     justify-content: space-around;
-  }
-}
-
-@media screen and (max-width: 555px) {
-  .elements {
-    max-width: 320px;
-    grid-template-columns: minmax(min-content, max-content);
+    margin: 50px 10px 66px;
   }
 }
 
