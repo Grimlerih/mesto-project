@@ -3,6 +3,7 @@
   background-color: #fff;
   flex-direction: column;
   border-radius: 10px;
+  position: relative;
 }
 
 @media screen and (max-width: 555px) {

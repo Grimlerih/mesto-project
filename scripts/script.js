@@ -1,7 +1,5 @@
 const editButton = document.querySelector('.profile__button-edit');
 const popupEdit = document.querySelector('.popup');
-const closeButtonAdd = document.getElementById('add_form_close');
-const closeButtonEdit = document.getElementById('edit_form_close');
 const addButton = document.querySelector('.profile__button-add');
 const popupEditForm = document.querySelector('#popup__edit-container');
 const popupAddForm = document.querySelector('#popup__add-container');
@@ -25,17 +23,21 @@ addButton.addEventListener('click', function () {
 });
 
 //закрытие модального окна добавления карточки и редактирования профиля
-function closeForm() {
+const closeBut = Array.from(document.querySelectorAll('.popup__button-close')); //closeForm
+closeBut.forEach(function(item) {
+  item.addEventListener('click' , function(){
+    closeForm ();
+  })
+})
+
+function closeForm () {
   popupEdit.classList.remove('popup_opened');
   popupAddForm.classList.add('popup__container_type_add');
   popupEditForm.classList.add('popup__container_type_edit');
+  imageContainer.classList.add('image-container_active');
 }
 
-closeButtonAdd.addEventListener('click', closeForm);
-closeButtonEdit.addEventListener('click', closeForm);
-
 //редактирование информации имени и работы
-const submitButtonEdit = document.getElementById('form__button_edit');
 const editForm = document.querySelector('#edit__form');
 const nameInput = document.querySelector('.form__text_type_name');
 const jobInput = document.querySelector('.form__text_type_activity');
@@ -71,6 +73,14 @@ function addCards(event) {
  placeElement.querySelector('.place__trash').addEventListener('click', function (evt) {
   evt.target.parentElement.remove();
 });
+
+placeElement.querySelector('.place__image').addEventListener('click' , function(){
+  popupEdit.classList.add('popup_opened');
+  imageContainer.classList.remove('image-container_active');
+  image.src = placeElement.querySelector('.place__image').src;
+  text.textContent = placeElement.querySelector('.place__name').textContent
+})
+
   closeForm();
 };
 
@@ -103,12 +113,25 @@ const initialCards = [{
   }
 ];
 
+const text = document.querySelector('.image-container__text');
+const imageContainer = document.querySelector('.image-container');
+const image = document.querySelector('.image-container__image');
+
+
 initialCards.forEach(function (element) {
   const placeCard = placeTemplate.querySelector('.place').cloneNode(true);
   placeCard.querySelector('.place__name').textContent = element.name;
   placeCard.querySelector('.place__image').src = element.link;
   placeContainer.append(placeCard)
+
+  placeCard.querySelector('.place__image').addEventListener('click' , function(){
+    popupEdit.classList.add('popup_opened');
+    imageContainer.classList.remove('image-container_active');
+    image.src = placeCard.querySelector('.place__image').src;
+    text.textContent = placeCard.querySelector('.place__name').textContent
+  })
 });
+
 
 //возможность ставить лайки
 const placeButton = document.querySelectorAll('.place__button');
@@ -128,4 +151,4 @@ trashButton.forEach(function(item) {
   item.addEventListener('click' , function(){
     item.parentElement.remove();
     });
-  })
+  });

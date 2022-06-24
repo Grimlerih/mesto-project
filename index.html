@@ -31,10 +31,10 @@
       <ul class="elements">
       </ul>
 
-      <template id = "place">
+      <template id="place">
         <li class="place">
           <button class="place__trash"></button>
-          <img src="" alt="" id = "place__image" class="place__image">
+          <img src="" alt="" id="place__image" class="place__image">
           <div class="place__info">
             <h2 class="place__name"></h2>
             <button class="place__button" type="button"></button>
@@ -52,26 +52,25 @@
   <div class="popup">
     <!-- popup_opened -->
 
-    <div id = "popup__add-container" class="popup__container popup__container_type_add">
-      <!-- popup__container__type_add -->
-      <button id="add_form_close" class="popup__button-close" type="button">
-      </button>
-      <form id = "add__form" class="form" name="form">
+    <div id="popup__add-container" class="popup__container popup__container_type_add">
+      <form id="add__form" class="form" name="form">
+        <button class="popup__button-close" type="button">
+        </button>
         <h2 class="form__title">Новое место</h2>
         <div class="form__container">
           <input class="form__text form__text_place-name" type="text" name="name" placeholder="Название">
           <input class="form__url" type="url" name="url" placeholder="Ссылка на картинку">
         </div>
-        <button id = "form__button_add" class="form__button " type="submit">
+        <button id="form__button_add" class="form__button " type="submit">
           Сохранить
         </button>
       </form>
     </div>
 
-    <div id = "popup__edit-container" class="popup__container popup__container_type_edit">
-      <button  id = "edit_form_close" class="popup__button-close" type="button">
-      </button>
-      <form id = "edit__form" class="form" name="form">
+    <div id="popup__edit-container" class="popup__container popup__container_type_edit">
+      <form id="edit__form" class="form" name="form">
+        <button class="popup__button-close" type="button">
+        </button>
         <h2 class="form__title">Редактировать профиль</h2>
         <div class="form__container">
           <input class="form__text form__text_type_name" type="text" name="name" value="Жак-Ив Кусто">
@@ -83,7 +82,12 @@
       </form>
     </div>
 
-
+    <div class="image-container image-container_active">
+      <button class="popup__button-close popup__button-close_img" type="button">
+      </button>
+      <img src="" class="image-container__image">
+      <p class="image-container__text"></p>
+    </div>
   </div>
   <script src="./scripts/script.js"></script>
 </body>
