@@ -18,7 +18,7 @@
       <div class="profile__container">
         <img class="profile__avatar" src="./images/image.png" alt="Жак-Ив Кусто">
         <div class="profile__info">
-          <h1 class="profile__name">Жак-Ив Кустов</h1>
+          <h1 class="profile__name">Жак-Ив Кусто</h1>
           <button class="profile__button-edit" type="button">
           </button>
           <p class="profile__activity">Исследователь океана </p>
@@ -52,7 +52,7 @@
   <div class="popup">
     <!-- popup_opened -->
 
-    <div id="popup__add-container" class="popup__container popup__container_type_add">
+    <div id="popup_add-card" class="popup__container popup__container_active">
       <form id="add__form" class="form" name="form">
         <button class="popup__button-close" type="button">
         </button>
@@ -67,14 +67,15 @@
       </form>
     </div>
 
-    <div id="popup__edit-container" class="popup__container popup__container_type_edit">
+    <div id="popup_edit-profile" class="popup__container popup__container_active">
       <form id="edit__form" class="form" name="form">
         <button class="popup__button-close" type="button">
         </button>
         <h2 class="form__title">Редактировать профиль</h2>
         <div class="form__container">
-          <input class="form__text form__text_type_name" type="text" name="name" value="Жак-Ив Кусто">
-          <input class="form__text form__text_type_activity" type="text" name="activity" value="Исследователь океана">
+          <input class="form__text form__text_type_name" type="text" name="name" value="Жак-Ив Кусто" placeholder="Имя">
+          <input class="form__text form__text_type_activity" type="text" name="activity" value="Исследователь океана"
+            placeholder="Вид деятельности">
         </div>
         <button id="form__button_edit" class="form__button" type="submit">
           Сохранить
@@ -82,13 +83,15 @@
       </form>
     </div>
 
-    <div class="image-container image-container_active">
+    <div id="popup_zoom-image" class="image-container popup__container_active">
       <button class="popup__button-close popup__button-close_img" type="button">
       </button>
       <img src="" class="image-container__image">
       <p class="image-container__text"></p>
     </div>
   </div>
+
+  <script src="./scripts/initial-сards.js"></script>
   <script src="./scripts/script.js"></script>
 </body>
 
