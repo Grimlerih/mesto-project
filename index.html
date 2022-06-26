@@ -38,7 +38,6 @@
           <div class="place__info">
             <h2 class="place__name"></h2>
             <button class="place__button" type="button"></button>
-            <!-- place__button_active -->
           </div>
         </li>
       </template>
@@ -49,10 +48,7 @@
     <p class="footer__copyright">© 2020 Mesto Russia</p>
   </footer>
 
-  <div class="popup">
-    <!-- popup_opened -->
-
-    <div id="popup_add-card" class="popup__container popup__container_active">
+    <div class="popup popup_add-card">
       <form id="add__form" class="form" name="form">
         <button class="popup__button-close" type="button">
         </button>
@@ -67,7 +63,7 @@
       </form>
     </div>
 
-    <div id="popup_edit-profile" class="popup__container popup__container_active">
+    <div class="popup popup_edit-profile">
       <form id="edit__form" class="form" name="form">
         <button class="popup__button-close" type="button">
         </button>
@@ -83,13 +79,14 @@
       </form>
     </div>
 
-    <div id="popup_zoom-image" class="image-container popup__container_active">
-      <button class="popup__button-close popup__button-close_img" type="button">
+    <div class="popup popup_zoom-image">
+      <div class="popup__button-pos">
+      <button class="popup__button-close" type="button">
       </button>
-      <img src="" class="image-container__image">
-      <p class="image-container__text"></p>
+      <img src="" alt="" class="popup__image">
+      <p class="popup__text"></p>
     </div>
-  </div>
+    </div>
 
   <script src="./scripts/initial-сards.js"></script>
   <script src="./scripts/script.js"></script>
