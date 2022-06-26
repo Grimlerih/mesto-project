@@ -30,13 +30,20 @@ addButton.addEventListener('click', function () {
 });
 
 //закрытие модального окна
-const closeButtons = Array.from(document.querySelectorAll('.popup__button-close'));
-closeButtons.forEach(function (item) {
-  item.addEventListener('click', function () {
-    closePopup(popupEditForm);
-    closePopup(popupAddForm);
-    closePopup(imagePopup);
-  })
+const editPopupCloseButton = document.querySelector('#edit_popup_close_button');
+const addPopupCloseButton = document.querySelector('#add_popup_close_button');
+const imagePopupCloseButton = document.querySelector('#image_popup_close_button');
+
+editPopupCloseButton.addEventListener('click' , function(){
+  closePopup(popupEditForm);
+})
+
+addPopupCloseButton.addEventListener('click' , function(){
+  closePopup(popupAddForm);
+})
+
+imagePopupCloseButton.addEventListener('click' , function(){
+  closePopup(imagePopup);
 })
 
 //редактирование информации имени и работы
@@ -79,10 +86,11 @@ function createCard(name, link, alt) {
   const placeElement = placeTemplate.querySelector('.place').cloneNode(true);
   const placeButton = placeElement.querySelector('.place__button');
   const placeTrash = placeElement.querySelector('.place__trash');
+  const placeImage = placeElement.querySelector('.place__image');
 
   placeElement.querySelector('.place__name').textContent = name;
-  placeElement.querySelector('.place__image').src = link;
-  placeElement.querySelector('.place__image').alt = alt;
+  placeImage.src = link;
+  placeImage.alt = alt;
 
   //открытие попапа с изображением
   placeElement.querySelector('.place__image').addEventListener('click', function () {
